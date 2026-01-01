@@ -7,6 +7,9 @@
 //consistently return the same value as long as the object’s state does not change, otherwise collections may fail to find
 //the object.
 
+//Why Override BOTH Together? If you override only equals(): Objects look equal But go into different buckets ❌ If 
+//you override only hashCode(): Objects go into same bucket But equals() says they are different ❌ So both must agree.
+
 //IN SIMPLE TERMS
 //1)HOW TO MAKE TWO OBJECTS LOGICALLY EQUAL IS BY OVERRIDING THE EQUALS METHOD.
 //2)BY OVERRIDING THE HASHCODE FUNCTION THE HASHCODE MUST CONSISTENTLY RETURN THE SAME VALUE. SO THAT LOGICALLY SAME OBJECTS DO NOT LAND UP IN
