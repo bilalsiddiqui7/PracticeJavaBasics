@@ -25,9 +25,9 @@ package com.practice.Multithreading;
 
 //IN THE BELOW CODE THE MAIN THREAD WILL WAIT FOR THE THREAD-0 TO COMPLETE ITS JOB
 //NOTE: WHEN WORKING WITH WAIT AND NOTIFY OUR CODE SHOULD BE SYNCHRONIZED
-Main Thread: | Acquire lock on thread1 | wait() → releases lock & waits
-Worker Thread (thread1): | Acquire lock | calculate | notify | releases lock
-Main Thread:| reacquire lock | print collection
+//Main Thread: | Acquire lock on thread1 | wait() → releases lock & waits
+//Worker Thread (thread1): | Acquire lock | calculate | notify | releases lock
+//Main Thread:| reacquire lock | print collection
 class TicketCalculator extends Thread {
 	int collection = 0;
 
