@@ -1,11 +1,11 @@
 //EQUALS AND HASHCODE CONTRACT
-//IT SAYS THAT
-//1) IF TWO OBJECTS ARE EQUAL ACCORDING TO THE Equals(Object o) METHOD THEN THE HASHCODE FOR BOTH THE OBJECTS WILL BE SAME(hashcode is nothing 
-//but an integer value).
-//2) IT IS NOT NECESSARY THAT IF YOU HAVE SAME HASHCODE FOR 2 OBJECTS MEANS THOSE TWO OBJECTS ARE EQUAL. THIS IS COLLISION. BETTER HASH FUNCTIONS 
-//PREVENTS THIS.
-//3) WHENEVER HASHCODE FUNCTION IS INVOKED ON THE SAME OBJECT MORE THAN ONCE DURING EXECUTION OF A JAVA PROGRAM, THE HASHCODE METHOD MUST 
-//CONSISTENTLY RETURN THE SAME INTEGER 
+//equals() and hashCode() work together to support correct and efficient behavior of hash-based collections like 
+//HashMap and HashSet. The hashCode() method determines the bucket (location) where an object is stored, while equals() 
+//determines whether two objects are logically equal. According to the contract, if two objects are equal as per equals(),
+//they must return the same hashCode() so they end up in the same bucket. However, having the same hash code does not 
+//guarantee equality; this is called a collision, and equals() is used to confirm equality. Also, hashCode() must 
+//consistently return the same value as long as the object’s state does not change, otherwise collections may fail to find
+//the object.
 
 //IN SIMPLE TERMS
 //1)HOW TO MAKE TWO OBJECTS LOGICALLY EQUAL IS BY OVERRIDING THE EQUALS METHOD.
